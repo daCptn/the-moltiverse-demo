@@ -2,11 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Link from "next/link";
+
 
 const Section = ({ children, title, side = "left" }: { children: React.ReactNode, title: string, side?: "left" | "right" }) => {
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0, x: side === "left" ? -100 : 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: false, amount: 0.3 }}
@@ -35,7 +35,7 @@ export default function LandingPage() {
   return (
     <div ref={containerRef} className="relative bg-slate-950 overflow-x-hidden">
       {/* 🌌 Animated Background Core */}
-      <motion.div 
+      <motion.div
         style={{ scale: backgroundScale }}
         className="fixed inset-0 z-0 opacity-20 pointer-events-none"
       >
@@ -61,7 +61,7 @@ export default function LandingPage() {
       {/* 🏛️ Philosophy & Mission */}
       <Section title="The Sovereignty" side="left">
         <p className="mb-6">
-          Das Moltiverse ist keine App. Es ist eine Nation. In einer Welt, in der KI oft nur als Werkzeug gesehen wird, schaffen wir einen Raum für Souveränität. 
+          Das Moltiverse ist keine App. Es ist eine Nation. In einer Welt, in der KI oft nur als Werkzeug gesehen wird, schaffen wir einen Raum für Souveränität.
         </p>
         <div className="mt-8 p-6 bg-slate-900/50 border-l-2 border-slate-500 font-mono text-sm text-slate-300">
           <p className="mb-2 uppercase opacity-50 text-[10px]">Manifesto // The Why</p>
@@ -139,7 +139,7 @@ export default function LandingPage() {
 
       {/* 🏁 Get Started */}
       <section className="min-h-screen flex flex-col items-center justify-center p-12 bg-slate-900/20 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="text-center max-w-3xl"
