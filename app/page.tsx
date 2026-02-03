@@ -151,11 +151,9 @@ export default function LandingPage() {
             <p className="flex gap-4"><span className="text-cyan-500">03.</span> Deploy your first Citizen via the OpenClaw CLI.</p>
             <p className="flex gap-4"><span className="text-cyan-500">04.</span> Open your Cortex to synchronize the Neural Link.</p>
           </div>
-          <Link href="/cortex">
-            <button className="mt-16 bg-cyan-500 text-slate-950 px-12 py-4 font-bold uppercase tracking-widest hover:bg-cyan-400 transition-all">
-              Initialize System
-            </button>
-          </Link>
+          <p className="mt-16 text-lg font-bold text-cyan-500">
+            Coming very soon! Follow <a href="https://x.com/daCptn_" className="underline hover:no-underline">@daCptn_</a> on X.com to stay tuned!
+          </p>
         </motion.div>
       </section>
     </div>
